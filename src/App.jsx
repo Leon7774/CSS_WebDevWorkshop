@@ -49,10 +49,10 @@ function Home() {
           ) : (
             <h1
               onClick={handleHeaderClick}
-              className="text-4xl font-extrabold text-orange-600 transition-all absolute active:scale-95 hover:text-orange-500 z-50 whitespace-nowrap"
+              className="text-4xl font-extrabold text-orange-600 transition-all fixed active:scale-95 hover:text-orange-500 z-50 whitespace-nowrap"
               style={{
                 left: `${Math.max(10, Math.min(80, Math.random() * 100))}%`, // stay within 10-80% of width
-                top: `${(Math.random() - 0.5) * 60}vh`, // stay around the vertical center instead of absolute px
+                top: `${Math.max(10, Math.min(90, Math.random() * 100))}vh`, // strict viewport height bounds, 10% to 90%
                 transform: "translate(-50%, -50%)", // center on both X and Y
               }}
             >
