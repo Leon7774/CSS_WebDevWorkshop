@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# CSS WebDev Workshop 🚀💻✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **CSS WebDev Workshop**! This project is designed to take you on a journey from basic HTML all the way to modern web development using React and Tailwind CSS. The repository is structured as an interactive, level-by-level workshop. Each level builds upon the previous one, introducing new concepts and technologies.
 
-Currently, two official plugins are available:
+## 🪜 The Levels
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Static Examples (The Fundamentals)
 
-## React Compiler
+- **Level 1: Pure HTML** (`/01-html/index.html`) - Focus on document structure and semantic tags without any styling.
+- **Level 2: HTML + CSS** (`/02-css/index.html`) - Adding style, colors, and layout using CSS.
+- **Level 3: HTML + CSS + JS** (`/03-js/index.html`) - Introducing interactivity with Vanilla JavaScript.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### React Examples (Modern Web Development)
 
-## Expanding the ESLint configuration
+- **Level 4: Basic React** - Component-based architecture and JSX.
+- **Level 5: React + Tailwind** - Styling efficiently using Tailwind CSS utility classes.
+- **Level 6: React Reusability** - The power of mapping over data to create reusable, dynamic components.
+- **Level 7: Landing Page Playground** - Putting it all together into a complete, modern, and aesthetically pleasing landing page.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+_P.S. There might be a hidden easter egg minigame on the homepage! Can you find it?_ 👀
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+To run this project locally on your machine:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Leon7774/CSS_WebDevWorkshop.git
+   cd CSS_WebDevWorkshop
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+4. **Open your browser:**
+   Navigate to the local URL provided in your terminal (usually `http://localhost:5173/`).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Built With
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
