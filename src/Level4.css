@@ -1,0 +1,111 @@
+/* Level 4 Styles - similar to Level 2 but scoped/module-like if we used modules, 
+   but here just standard CSS for simplicity of demonstration */
+
+.level4-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.level4-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.level4-card:hover {
+  transform: translateY(-5px);
+}
+
+.level4-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.level4-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+.level4-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.level4-title {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-weight: 400;
+  margin: 0;
+}
+
+.level4-body {
+  padding: 1.5rem;
+}
+
+.level4-body h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.level4-body p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.level4-footer {
+  padding: 1rem 1.5rem 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.level4-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.level4-btn-primary {
+  background-color: #667eea;
+  color: white;
+}
+
+.level4-btn-primary:hover {
+  background-color: #5a6fd1;
+}
+
+.level4-btn-connected {
+  background-color: #48bb78;
+  color: white;
+}
+
+.level4-btn-connected:hover {
+  background-color: #38a169;
+}
+
+.level4-btn-secondary {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.level4-btn-secondary:hover {
+  background-color: #cbd5e0;
+}

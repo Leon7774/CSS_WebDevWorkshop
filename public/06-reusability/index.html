@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 6: Standard HTML (The Hard Way)</title>
+    <link rel="stylesheet" href="../02-css/styles.css" />
+    <style>
+      /* Extra styles for layout */
+      body {
+        /* Overriding centering from Level 2 to allow multiple cards */
+        display: block;
+        padding: 40px;
+      }
+      .intro {
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+      <h1>Level 6: The "Copy-Paste" Way</h1>
+      <p>
+        Without components, we have to duplicate the entire HTML structure for
+        every single user. If we want to change the class of the "Message"
+        button, we have to do it 3 times!
+      </p>
+    </div>
+
+    <div class="grid">
+      <!-- USER 1 -->
+      <article class="card">
+        <header class="card-header">
+          <img src="/vite.svg" alt="Profile Picture" class="avatar" />
+          <h1 class="name">Jane Doe</h1>
+          <h2 class="title">Frontend Developer</h2>
+        </header>
+        <section class="card-body">
+          <h3>About Me</h3>
+          <p>
+            I love building beautiful, accessible, and performant web
+            applications.
+          </p>
+        </section>
+        <footer class="card-footer">
+          <button class="btn btn-primary">Connect</button>
+          <button class="btn btn-secondary">Message</button>
+        </footer>
+      </article>
+
+      <!-- USER 2 (Manually copied and changed) -->
+      <article class="card">
+        <header class="card-header">
+          <img src="/vite.svg" alt="Profile Picture" class="avatar" />
+          <h1 class="name">John Smith</h1>
+          <h2 class="title">Backend Engineer</h2>
+        </header>
+        <section class="card-body">
+          <h3>About Me</h3>
+          <p>
+            I love building beautiful, accessible, and performant web
+            applications.
+          </p>
+        </section>
+        <footer class="card-footer">
+          <button class="btn btn-primary">Connect</button>
+          <button class="btn btn-secondary">Message</button>
+        </footer>
+      </article>
+
+      <!-- USER 3 (Manually copied and changed) -->
+      <article class="card">
+        <header class="card-header">
+          <img src="/vite.svg" alt="Profile Picture" class="avatar" />
+          <h1 class="name">Alice Johnson</h1>
+          <h2 class="title">UI/UX Designer</h2>
+        </header>
+        <section class="card-body">
+          <h3>About Me</h3>
+          <p>
+            I love building beautiful, accessible, and performant web
+            applications.
+          </p>
+        </section>
+        <footer class="card-footer">
+          <button class="btn btn-primary">Connect</button>
+          <button class="btn btn-secondary">Message</button>
+        </footer>
+      </article>
+    </div>
+
+    <div class="navigation" style="margin-top: 50px">
+      <a href="/">Back to Home</a>
+    </div>
+  </body>
+</html>

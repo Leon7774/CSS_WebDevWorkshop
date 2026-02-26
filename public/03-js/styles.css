@@ -1,0 +1,12 @@
+/* Reusing styles from Level 2 */
+@import url("../02-css/styles.css");
+
+/* Add styles for connected state */
+.btn-connected {
+  background-color: #48bb78; /* Green */
+  color: white;
+}
+
+.btn-connected:hover {
+  background-color: #38a169;
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 3: HTML + CSS + JS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- 
+      Level 3: HTML + CSS + JS
+      Added ID to button for JavaScript interaction
+    -->
+
+    <main class="container">
+      <article class="card">
+        <header class="card-header">
+          <img src="/vite.svg" alt="Profile Picture" class="avatar" />
+          <h1 class="name">Jane Doe</h1>
+          <h2 class="title" id="job-title">Frontend Developer</h2>
+        </header>
+
+        <section class="card-body">
+          <h3>About Me</h3>
+          <p>
+            I love building beautiful, accessible, and performant web
+            applications.
+          </p>
+        </section>
+
+        <footer class="card-footer">
+          <button id="connect-btn" class="btn btn-primary">Connect</button>
+          <button
+            class="btn btn-secondary"
+            onclick="alert('Message feature coming soon!')"
+          >
+            Message
+          </button>
+        </footer>
+      </article>
+    </main>
+
+    <div class="navigation">
+      <p><em>JavaScript adds interactivity. Try clicking the buttons!</em></p>
+      <a href="/">Back to Home</a>
+    </div>
+  </body>
+</html>
