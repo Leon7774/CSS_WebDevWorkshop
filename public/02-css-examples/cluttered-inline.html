@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cluttered Inline CSS Example</title>
+  </head>
+  <body
+    style="
+      font-family: &quot;Arial&quot;, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    "
+  >
+    <header
+      style="
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h1 style="margin: 0; font-size: 2.5em; letter-spacing: 1px">
+        Welcome to My Messy Page
+      </h1>
+      <p style="margin: 10px 0 0; font-style: italic; color: #bdc3c7">
+        This is really hard to maintain!
+      </p>
+    </header>
+
+    <main
+      style="
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      "
+    >
+      <section
+        style="
+          margin-bottom: 30px;
+          border-bottom: 2px solid #eee;
+          padding-bottom: 20px;
+        "
+      >
+        <h2 style="color: #2980b9; font-size: 2em; margin-top: 0">
+          Why Inline CSS is Troublesome
+        </h2>
+        <p style="font-size: 1.1em; margin-bottom: 15px">
+          When you add styles directly to HTML elements, your code becomes
+          incredibly repetitive and difficult to read.
+        </p>
+        <ul style="list-style-type: square; padding-left: 20px; color: #555">
+          <li
+            style="
+              margin-bottom: 10px;
+              background-color: #fdfbfb;
+              padding: 5px;
+              border-left: 4px solid #e74c3c;
+            "
+          >
+            Hard to reuse styles across multiple elements.
+          </li>
+          <li
+            style="
+              margin-bottom: 10px;
+              background-color: #fdfbfb;
+              padding: 5px;
+              border-left: 4px solid #e74c3c;
+            "
+          >
+            HTML files become bloated and unreadable.
+          </li>
+          <li
+            style="
+              margin-bottom: 10px;
+              background-color: #fdfbfb;
+              padding: 5px;
+              border-left: 4px solid #e74c3c;
+            "
+          >
+            Making a global change requires editing every single element.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style="color: #27ae60; font-size: 1.8em">Call to Action</h2>
+        <button
+          style="
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+          "
+          onmouseover="this.style.backgroundColor = '#2980b9'"
+          onmouseout="this.style.backgroundColor = '#3498db'"
+        >
+          Click Me (If You Dare)
+        </button>
+      </section>
+    </main>
+
+    <footer
+      style="
+        margin-top: 40px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #7f8c8d;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+      "
+    >
+      <p style="margin: 0">
+        &copy; 2026 Bad Practices Inc. Don't do this at home.
+      </p>
+    </footer>
+  </body>
+</html>

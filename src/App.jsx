@@ -203,6 +203,41 @@ function Home() {
               </Link>
             </div>
           </div>
+
+          {/* Resources */}
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow ring-2 ring-emerald-50">
+            <h2 className="text-xl font-bold mb-4 text-emerald-700 border-b pb-2">
+              Resources
+            </h2>
+            <div className="space-y-3">
+              <a
+                href="https://github.com/Leon7774/webdevexercises.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 hover:text-emerald-700 transition-colors group"
+              >
+                <span className="font-semibold group-hover:underline">
+                  Exercises Link
+                </span>
+                <p className="text-sm text-gray-500 mt-1">
+                  Repository for workshop exercises.
+                </p>
+              </a>
+              <a
+                href="https://github.com/Leon7774/ReactTailwindTemplate.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-3 rounded-lg bg-emerald-50 hover:bg-emerald-100 hover:text-emerald-700 transition-colors group"
+              >
+                <span className="font-semibold group-hover:underline">
+                  React Template Link
+                </span>
+                <p className="text-sm text-gray-500 mt-1">
+                  Templates and demonstrations.
+                </p>
+              </a>
+            </div>
+          </div>
         </div>
 
         <footer className="mt-12 flex items-center justify-center text-gray-400 text-sm">
