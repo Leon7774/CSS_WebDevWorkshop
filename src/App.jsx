@@ -233,7 +233,7 @@ function Home() {
                   React Template Link
                 </span>
                 <p className="text-sm text-gray-500 mt-1">
-                  Templates and demonstrations.
+                  Get started with React!
                 </p>
               </a>
             </div>
